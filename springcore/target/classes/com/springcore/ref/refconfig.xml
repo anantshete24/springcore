@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="http://springframework.org/schema/context"
+   xmlns:p="http://springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+  https://www.springframework.org/schema/beans/spring-beans.xsd
+  https://www.springframework.org/schema/beans/context
+  https://www.springframework.org/schema/beans/spring-context.xsd">
+  
+ <bean class="com.springcore.ref.B" name="bref">
+	<property name="y" value="90"> 	</property>
+ </bean>
+ 
+ <bean class="com.springcore.ref.A" name="aref"> 
+ 
+ 
+ <property name="x" value="12"></property>
+ 
+ 
+ 	<property name="ob" ref="bref"/>
+</bean>
+ 
+</beans>
